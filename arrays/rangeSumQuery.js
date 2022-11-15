@@ -1,9 +1,12 @@
 /*
-    Given an array of integers A. Return the sum of all elements lies in the query ranges
+    You are given an integer array A of length N.
+    You are also given a 2D integer array B with dimensions M x 2, where each row denotes a [L, R] query.
+    For each query, you have to find the sum of all elements from L to R indices in A (1 - indexed).
+    More formally, find A[L] + A[L + 1] + A[L + 2] +... + A[R - 1] + A[R] for each query.
  */
 
 // Brute force solution O(N^2)
-function prefixSum(nums, query){
+function rangeSumQuery(nums, query){
     const ans = []
     for (let i = 0; i < query.length; i++) {
         let start = query[i][0], end = query[i][1]
@@ -17,7 +20,7 @@ function prefixSum(nums, query){
 }
 
 // Optimise solution O(N)
-function prefixSum2(nums, query) {
+function rangeSumQuery2(nums, query) {
     const preFixSum = [], result = []
     preFixSum[0] = nums[0]
     for (let i = 1; i < nums.length ; i++) {
@@ -34,5 +37,5 @@ function prefixSum2(nums, query) {
     return result
 }
 
-console.log(prefixSum([20, 12, 15, 19, 13, 5, 13, 12, 18], [[2,5], [3,4], [1,3], [0,6]]))
-console.log(prefixSum2([20, 12, 15, 19, 13, 5, 13, 12, 18], [[2,5], [3,4], [1,3], [0,6]]))
+console.log(rangeSumQuery([20, 12, 15, 19, 13, 5, 13, 12, 18], [[2,5], [3,4], [1,3], [0,6]]))
+console.log(rangeSumQuery2([20, 12, 15, 19, 13, 5, 13, 12, 18], [[2,5], [3,4], [1,3], [0,6]]))
