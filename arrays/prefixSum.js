@@ -1,5 +1,5 @@
 /*
-    Given an array of integers A. Return the sum of all the query ranges
+    Given an array of integers A. Return the sum of all elements lies in the query ranges
  */
 
 // Brute force solution O(N^2)
