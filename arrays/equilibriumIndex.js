@@ -1,7 +1,6 @@
 /*
     Given array of integers, check if there is an equilibrium index in the array
-    Equilibrium index: index for which,
-                            sum of elements on left side = sum of elements on right side
+    Equilibrium index: index for which, sum of elements on left side = sum of elements on right side
  */
 
 // Brute force solution O(N^2)
