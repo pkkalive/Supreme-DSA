@@ -1,6 +1,7 @@
 /*
     Given an array reverse in-place
  */
+
 function reverseArray (arr){
     let start = 0, end = arr.length -1
     while (start <= end){
