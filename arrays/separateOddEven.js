@@ -1,6 +1,6 @@
 /*
-    You are given an integer T denoting the number of test cases. For each test case, you are given an integer array A.
-    You have to print the odd and even elements of array A in 2 separate lines.
+    You are given an integer T denoting the number of test cases. For each test case, you are given an integer
+    array A. You have to print the odd and even elements of array A in 2 separate lines.
     NOTE: Array elements should have the same relative order as in A.
  */
 
