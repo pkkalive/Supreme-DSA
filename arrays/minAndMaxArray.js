@@ -1,5 +1,7 @@
 /*
-    Write a program to print maximum and minimum elements of the input array A of size N. The first line of the input would contain a single integer N that represents the length of the array. The next N lines contain elements of the input array A.
+    Write a program to print maximum and minimum elements of the input array A of size N. The first line of the
+    input would contain a single integer N that represents the length of the array. The next N lines contain
+     elements of the input array A.
  */
 
 function minAndMaxArray(nums){
