@@ -1,6 +1,7 @@
 /*
     You are given an integer N you need to print all the Armstrong Numbers between 1 to N. (N inclusive).
-    An Armstrong number is a number such that when each individual digit of the number is raised to the power three in the number and then added up, they are equal to the original number itself.
+    An Armstrong number is a number such that when each individual digit of the number is raised to the power
+    three in the number and then added up, they are equal to the original number itself.
     For example, 153 = ( 1 * 1 * 1 ) + ( 5 * 5 * 5 ) + ( 3 * 3 * 3 ).
     Note: All the integers N given as input in this problem are limited to three digits
  */
