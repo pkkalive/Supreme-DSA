@@ -5,7 +5,7 @@
  */
 
 function specialSubsequences(s){
-    const n = s.length
+    const n = s.length, MOD = 1000000007
     let a_count = 0, total = 0
     for (let i = 0; i < n; i++) {
         if (s[i] === "A"){
@@ -15,7 +15,7 @@ function specialSubsequences(s){
             total += a_count
         }
     }
-    return total
+    return total%MOD
 }
 
 console.log(specialSubsequences("ABCGAG"))
