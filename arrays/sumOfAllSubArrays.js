@@ -6,7 +6,25 @@
     A subarray sum denotes the sum of all the elements of that subarray.
  */
 
-function sumOfAllSubArrays(A){
+// Brute force solution O(N^3)
+function sumOfAllSubArrays(nums){
+    const n = nums.length
+    let ans = 0
+    for (let i = 0; i < n; i++) {
+        for (let j = i; j < n; j++) {
+            let sum = 0
+            for (let k = i; k <= j; k++) {
+                sum += nums[k]
+            }
+            ans += sum
+        }
+    }
+    return ans
+}
+
+
+
+function sumOfAllSubArrays1(A){
     let n = A.length;
     let sum = BigInt(0)
     for(let i = 0; i < n; i++){
@@ -16,4 +34,5 @@ function sumOfAllSubArrays(A){
     return sum;
 }
 
-console.log(sumOfAllSubarrays([1, 2, 3]))
+console.log(sumOfAllSubArrays([1, 2, 3]))
+console.log(sumOfAllSubArrays1([1, 2, 3]))
